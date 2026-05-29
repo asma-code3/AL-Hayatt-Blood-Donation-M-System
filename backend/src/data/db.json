@@ -1,0 +1,89 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "role": "Administrator",
+      "passwordHash": "$2b$10$g7KjIYoYJfqKXLKpgUSqdePmX9cheUSCR2Ej48vj9J3X3MSEikJqS"
+    },
+    {
+      "id": 2,
+      "username": "staff",
+      "role": "Staff",
+      "passwordHash": "$2b$10$XeuRMSIgmwE0jCj2TqTdbOqmS8P3WXdA4G4tDGLuYZEzr.Bfs5RsW"
+    },
+    {
+      "id": 3,
+      "username": "doctor",
+      "role": "Doctor",
+      "passwordHash": "$2b$10$tmNrFiirZyOx3IjJ9LXg0.iZoyeW03Q19Em4ev5WrrjTCdkgcS51q"
+    }
+  ],
+  "donors": [
+    {
+      "id": 1,
+      "donorId": "DNR-1001",
+      "name": "Ahmed Ali",
+      "age": 30,
+      "gender": "Male",
+      "bloodType": "A+",
+      "contact": "555-1234",
+      "address": "Mogadishu",
+      "donations": 2
+    },
+    {
+      "id": 2,
+      "donorId": "DNR-1002",
+      "name": "Fadumo Hassan",
+      "age": 26,
+      "gender": "Female",
+      "bloodType": "O-",
+      "contact": "555-5678",
+      "address": "Hargeisa",
+      "donations": 1
+    }
+  ],
+  "patients": [
+    {
+      "id": 1,
+      "name": "Hodan Yusuf",
+      "age": 28,
+      "gender": "Female",
+      "bloodType": "O+",
+      "condition": "Scheduled transfusion"
+    }
+  ],
+  "inventory": [
+    {
+      "id": 1,
+      "unitId": "UNT-1001",
+      "bloodType": "A+",
+      "volume": 450,
+      "collectionDate": "2026-05-01",
+      "expiryDate": "2026-06-12",
+      "status": "Available",
+      "donorId": "DNR-1001"
+    },
+    {
+      "id": 2,
+      "unitId": "UNT-1002",
+      "bloodType": "A+",
+      "volume": 500,
+      "collectionDate": "2026-05-03",
+      "expiryDate": "2026-06-14",
+      "status": "Available",
+      "donorId": "DNR-1001"
+    },
+    {
+      "id": 3,
+      "unitId": "UNT-1003",
+      "bloodType": "O-",
+      "volume": 450,
+      "collectionDate": "2026-05-02",
+      "expiryDate": "2026-06-13",
+      "status": "Available",
+      "donorId": "DNR-1002"
+    }
+  ],
+  "requests": []
+}

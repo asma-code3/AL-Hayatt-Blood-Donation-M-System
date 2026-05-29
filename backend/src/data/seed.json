@@ -1,0 +1,118 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "role": "Administrator"
+    },
+    {
+      "id": 2,
+      "username": "staff",
+      "password": "staff123",
+      "role": "Staff"
+    },
+    {
+      "id": 3,
+      "username": "doctor",
+      "password": "doctor123",
+      "role": "Doctor"
+    }
+  ],
+  "donors": [
+    {
+      "id": 1,
+      "donorId": "DNR-1001",
+      "name": "Ahmed Ali",
+      "age": 30,
+      "gender": "Male",
+      "bloodType": "A+",
+      "contact": "555-1234",
+      "address": "Mogadishu",
+      "donations": 2
+    },
+    {
+      "id": 2,
+      "donorId": "DNR-1002",
+      "name": "Fadumo Hassan",
+      "age": 26,
+      "gender": "Female",
+      "bloodType": "O-",
+      "contact": "555-5678",
+      "address": "Hargeisa",
+      "donations": 1
+    }
+  ],
+  "patients": [
+    {
+      "id": 1,
+      "name": "Hodan Yusuf",
+      "age": 28,
+      "gender": "Female",
+      "bloodType": "O+",
+      "condition": "Scheduled transfusion"
+    }
+  ],
+  "inventory": [
+    {
+      "id": 1,
+      "unitId": "UNT-1001",
+      "bloodType": "A+",
+      "volume": 450,
+      "collectionDate": "2026-05-01",
+      "expiryDate": "2026-06-12",
+      "status": "Available",
+      "donorId": "DNR-1001"
+    },
+    {
+      "id": 2,
+      "unitId": "UNT-1002",
+      "bloodType": "A+",
+      "volume": 500,
+      "collectionDate": "2026-05-03",
+      "expiryDate": "2026-06-14",
+      "status": "Available",
+      "donorId": "DNR-1001"
+    },
+    {
+      "id": 3,
+      "unitId": "UNT-1003",
+      "bloodType": "O-",
+      "volume": 450,
+      "collectionDate": "2026-05-02",
+      "expiryDate": "2026-06-13",
+      "status": "Available",
+      "donorId": "DNR-1002"
+    }
+  ],
+  "requests": [],
+  "history": [
+    {
+      "id": 1,
+      "historyId": "HIS-1001",
+      "donorId": "DNR-1001",
+      "donorName": "Ahmed Ali",
+      "bloodType": "A+",
+      "donationDate": "2026-05-12",
+      "notes": "Routine donor visit"
+    },
+    {
+      "id": 2,
+      "historyId": "HIS-1002",
+      "donorId": "DNR-1001",
+      "donorName": "Ahmed Ali",
+      "bloodType": "A+",
+      "donationDate": "2026-04-21",
+      "notes": "Follow-up donation"
+    },
+    {
+      "id": 3,
+      "historyId": "HIS-1003",
+      "donorId": "DNR-1002",
+      "donorName": "Fadumo Hassan",
+      "bloodType": "O-",
+      "donationDate": "2026-05-08",
+      "notes": "First recorded donation"
+    }
+  ]
+}
