@@ -1,5 +1,36 @@
 # Blood Donation System Deployment
 
+## Vercel Full-Stack Services Deployment
+
+Deploy the frontend and backend together as one Vercel project:
+
+1. Import the GitHub repository in Vercel.
+2. Set `Application Preset` to `Services`.
+3. Keep `Root Directory` as `./`.
+4. Vercel will use the root `vercel.json` to deploy:
+
+- Frontend at `/`
+- Backend at `/_/backend`
+
+5. Add these environment variables:
+
+```powershell
+NODE_ENV=production
+MONGODB_URI=<your-production-mongodb-uri>
+JWT_SECRET=<strong-random-secret>
+FRONTEND_URL=https://<your-vercel-project-domain>
+VITE_API_URL=/_/backend/api
+ADMIN_USERNAME=<admin-username>
+ADMIN_PASSWORD=<strong-admin-password>
+ADMIN_ROLE=Administrator
+LOG_REQUESTS=false
+```
+
+After deployment, test:
+
+- Frontend: `https://<your-vercel-project-domain>/`
+- Backend health: `https://<your-vercel-project-domain>/_/backend/api/health`
+
 ## Vercel Backend Deployment
 
 Deploy the backend as its own Vercel project:
